@@ -9,7 +9,7 @@ In your Flutter project, in pubspec.yaml file add the dependency:
 
 ```
 dependencies:
-  device_region: ^0.9.0
+  device_region: ^0.9.1
 ```
 
 ## Usage example
@@ -17,7 +17,7 @@ dependencies:
 Import `device_region.dart` package.
 
 ``` dart
-import 'package:device_region.dart';
+import 'package:device_region/device_region.dart';
 ```
 ### Get SIM country code
 
