@@ -32,6 +32,8 @@
 /.idea/workspace.xml
 /.idea/libraries
 
+# iOS related defined in separated .gitignore
+
 # Flutter/Dart/Pub related
 # Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
 /pubspec.lock
