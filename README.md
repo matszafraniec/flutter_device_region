@@ -18,7 +18,6 @@ Import `device_region.dart` package.
 
 ``` dart
 import 'package:device_region.dart';
-
 ```
 ### Get SIM country code
 
@@ -26,7 +25,6 @@ Call `getSIMCountryCode` method to receive SIM country code.
 
 ``` dart
 await DeviceRegion.getSIMCountryCode();
-
 ```
 
 ###### Android:
