@@ -9,7 +9,7 @@ In your Flutter project, in pubspec.yaml file add the dependency:
 
 ```
 dependencies:
-  device_region: ^1.0.0
+  device_region: ^1.0.1
 ```
 
 ## Usage example
