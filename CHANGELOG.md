@@ -1,3 +1,6 @@
+## 1.0.0
+
+Updated to Flutter 3
 ## 0.9.1
 
 Updated readme
