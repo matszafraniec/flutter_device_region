@@ -1,3 +1,7 @@
+## 1.0.2
+
+Now return null if there is no SIM Card (UICC) in android device (didn't return at all before).
+
 ## 1.0.1
 
 Updated readme
