@@ -36,7 +36,11 @@ class DeviceRegionPlugin: FlutterPlugin, MethodCallHandler {
             
             if (networkCountry != null && networkCountry.length == 2) { // network country code is available
                 result.success(networkCountry)
+            } else {
+              result.success(null)
             }
+        } else {
+          result.success(null)
         }
     }
     catch (e: Exception) {
