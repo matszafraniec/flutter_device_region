@@ -1,6 +1,6 @@
 name: device_region
 description: This plugin uses platform-specific API to return SIM country code
-version: 1.0.2
+version: 1.1.0
 homepage: https://github.com/matszafraniec/flutter_device_region
 
 environment:
