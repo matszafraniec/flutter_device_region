@@ -4,7 +4,7 @@ Updated Gradle properties and dependencies.
 
 ## 1.0.2
 
-Now return null if there is no SIM Card (UICC) in android device (didn't return at all before).
+Now return null if there is no SIM Card (UICC) in Android device (didn't return at all before).
 
 ## 1.0.1
 
