@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
                 child: const Text('Get SIM country code'),
               ),
               const SizedBox(height: 15),
-              Text('Your SIM country code is: $_simRegion\n'),              
+              Text('Your SIM country code is: $_simRegion\n'),
             ],
           ),
         ),
