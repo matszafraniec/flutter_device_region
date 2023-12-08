@@ -9,7 +9,7 @@ In your Flutter project, in pubspec.yaml file add the dependency:
 
 ```
 dependencies:
-  device_region: ^1.0.1
+  device_region: ^1.2.0
 ```
 
 ## Usage example
@@ -27,7 +27,7 @@ Call `getSIMCountryCode` method to receive SIM country code.
 await DeviceRegion.getSIMCountryCode();
 ```
 
-###### Android:
+#### Android:
 
 Using [TelephonyManager][1] class:
 
@@ -37,7 +37,13 @@ In case the value cannot be retrieved or an error occurs, null value will be ret
   
 [1]: https://developer.android.com/reference/android/telephony/TelephonyManager
   
-###### iOS:
+#### iOS:
+
+##### iOS 16.0 and higher
+
+Due to deprecated properties in [CTTelephonyNetworkInfo][2] class, plugin uses [Locale][4] class and returns Locale.current.region.[identifier][5].
+
+##### iOS up to 16.0
  
 Using [CTTelephonyNetworkInfo][2] class:
   
@@ -46,11 +52,13 @@ Returns [*isoCountryCode*][3] if available.
 In case the value cannot be retrieved or an error occurs, null value will be returned
   
 [2]: https://developer.apple.com/documentation/coretelephony/cttelephonynetworkinfo
-[3]: https://developer.apple.com/documentation/coretelephony/ctcarrier/1620317-isocountrycode  
+[3]: https://developer.apple.com/documentation/coretelephony/ctcarrier/1620317-isocountrycode
+[4]: https://developer.apple.com/documentation/foundation/locale
+[5]: https://developer.apple.com/documentation/foundation/locale/region/3952434-identifier
 
 ## Important notes
 
-- While call `getSIMCountryCode` on iOS, it will return proper country code and can throw error log in debugger as below:
+- While call `getSIMCountryCode` on iOS (up to 16.0), it returns proper country code and can throw error log in debugger as below:
 ```
 [Client] Updating selectors after delegate addition failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service with pid 91 named com.apple.commcenter.coretelephony.xpc was invalidated from this process." UserInfo={NSDebugDescription=The connection to service with pid 91 named com.apple.commcenter.coretelephony.xpc was invalidated from this process.}
 ```
