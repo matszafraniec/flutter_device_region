@@ -1,6 +1,18 @@
+## 1.3.0
+
+Updated dart SDK constraints from <3.0.0 to <4.0.0.
+
+## 1.2.0
+
+[iOS] Due to deprecated properties in [CTTelephonyNetworkInfo][1] class, from iOS 16.0 plugin uses [Locale][2] class and returns Locale.current.region.[identifier][3].
+
+[1]: https://developer.apple.com/documentation/coretelephony/cttelephonynetworkinf
+[2]: https://developer.apple.com/documentation/foundation/locale
+[3]: https://developer.apple.com/documentation/foundation/locale/region/3952434-identifier
+
 ## 1.1.0
 
-Updated Gradle properties and dependencies.
+[Android] Updated Gradle properties and dependencies.
 
 ## 1.0.2
 
@@ -8,15 +20,15 @@ Now return null if there is no SIM Card (UICC) in Android device (didn't return 
 
 ## 1.0.1
 
-Updated readme
+Updated readme.
 
 ## 1.0.0
 
-Updated to Flutter 3
+Updated to Flutter 3.
 
 ## 0.9.1
 
-Updated readme
+Updated readme.
 
 ## 0.9.0
 
