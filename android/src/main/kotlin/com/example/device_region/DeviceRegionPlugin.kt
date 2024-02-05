@@ -31,15 +31,7 @@ class DeviceRegionPlugin: FlutterPlugin, MethodCallHandler {
         if (simCountry != null && simCountry.length == 2) { // SIM country code is available
             result.success(simCountry)
         } 
-        else if (tm.phoneType != TelephonyManager.PHONE_TYPE_CDMA) { // Device is not 3G (would be unreliable)
-            val networkCountry = tm.networkCountryIso
-            
-            if (networkCountry != null && networkCountry.length == 2) { // network country code is available
-                result.success(networkCountry)
-            } else {
-              result.success(null)
-            }
-        } else {
+        else {
           result.success(null)
         }
     }
