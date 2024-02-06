@@ -1,3 +1,7 @@
+## 1.4.0
+
+Added very basic support for Windows and Linux. `getSIMCountryCode` will return null instead of throwing an exception. Thanks to Martin Clauss.
+
 ## 1.3.0
 
 Updated dart SDK constraints from <3.0.0 to <4.0.0.
