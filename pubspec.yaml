@@ -32,6 +32,10 @@ flutter:
         pluginClass: DeviceRegionPlugin
       ios:
         pluginClass: DeviceRegionPlugin
+      windows:
+        pluginClass: DeviceRegionPluginCApi
+      linux:
+        pluginClass: DeviceRegionPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
